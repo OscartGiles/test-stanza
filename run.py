@@ -1,6 +1,8 @@
+import os
 import stanza
 from stanza.server import CoreNLPClient
 
+print("OS = ", os.name)
 stanza.install_corenlp()
 
 client = CoreNLPClient(port=8888)
@@ -11,7 +13,7 @@ client.ensure_alive()
 
 # Get its PID
 pid = client.server.pid
-print("Process running on: {pid if pid else Cant find pid}")
+print(f"Process running on: {pid if pid else Cant find pid}")
 
 
 # client.stop()

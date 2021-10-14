@@ -13,7 +13,7 @@ client.ensure_alive()
 
 # Get its PID
 pid = client.server.pid
-print(f"Process running on: {pid if pid else Cant find pid}")
+print(f"Process running on: {pid if pid else 'Cant find pid'}")
 
 
 # client.stop()

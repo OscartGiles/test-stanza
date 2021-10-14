@@ -2,10 +2,10 @@ name: unit-tests
 on: [push]
 jobs:
   run:
-    runs-on: windows
+    runs-on: windows-latest
     strategy:
       matrix:
-        os: [windows]
+        os: [windows-latest]
         python-version: [3.7]
       fail-fast: false
 

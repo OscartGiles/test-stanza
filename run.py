@@ -1,8 +1,8 @@
-import os
+import platform
 import stanza
 from stanza.server import CoreNLPClient
 
-print("OS = ", os.platform.system())
+print("OS = ", platform.system())
 stanza.install_corenlp()
 
 client = CoreNLPClient(port=8888)

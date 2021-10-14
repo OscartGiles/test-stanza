@@ -19,5 +19,4 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - run: pip install stanza
-    - run: python run.py
-    - run: python run.py
+    - run: python run.py && python run.py
